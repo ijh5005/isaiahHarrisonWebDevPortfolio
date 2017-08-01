@@ -42,3 +42,9 @@ $(".flipContainerClick").click((e) => {
   var href = $("a[data=" + dataName + "]").attr('href');
   window.location.href = href;
 });
+
+$(".flipContainerClick p").click((e) => {
+  const dataName = e.target.attributes.data.nodeValue;
+  var href = $("a[data=" + dataName + "]").attr('href');
+  window.location.href = href;
+});
